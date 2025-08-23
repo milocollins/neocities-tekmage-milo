@@ -1,7 +1,7 @@
 class NavBar extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = '<p>Nothing yet chief!</p>';
-    }
+  connectedCallback() {
+    this.innerHTML = '<p>Nothing yet chief!</p>';
+  }
 }
 
-customElements.define( 'app-navbar', NavBar );
+customElements.define('app-navbar', NavBar);
