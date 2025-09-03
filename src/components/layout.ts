@@ -6,9 +6,9 @@ export class Layout extends HTMLElement {
         <h1 class="text-4xl font-bold">Tekmage Milo's Tinkory</h1>
         <h2 class="text-2xl font-semibold">Welcome, make yourself at home!</h2>
       </header>
-      <div class="flex-1 grid grid-cols-6 gap-4">
-          <cast-navbar class="col-span-1 p-4"></cast-navbar>
-          <main class="col-span-4 p-4 bg-[var(--colour-my-body)] flex flex-col">
+      <div class="flex-1 flex flex-col md:grid md:grid-cols-6 gap-4">
+          <cast-navbar class="w-full flex-shrink-0 self-start md:col-span-1 p-4"></cast-navbar>
+          <main class="flex-1 md:col-span-4 bg-[var(--colour-my-body)] flex flex-col">
             <div class="flex-1">
               ${this.innerHTML}
             </div>
