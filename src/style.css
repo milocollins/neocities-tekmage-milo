@@ -1,14 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --colour-my-red: #c8553d;
+  --colour-my-orange: #f28f3b;
+  --colour-my-body: #393d3f;
+  --colour-my-footer: #1789fc;
+}
+
+html,
 body {
-  background-color: #262626;
-  color: white;
+  height: 100%;
   margin: 0;
-  font-family: "Pirata One", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: large;
+  padding: 0;
+}
+
+body {
+  background-color: var(--colour-my-red);
+  color: white;
+  font-family: 'Pirata One', system-ui;
+  height: 100%;
+  position: relative;
+  display: block;
 }
 header {
-  box-shadow: 0 5px 4px 1px #2EFFA8;
+  background: var(--colour-my-orange);
+  box-shadow: 0 5px 4px 1px var(--colour-my-red);
   padding: 16px;
 }
 #banner > h1 {
@@ -20,10 +36,9 @@ header {
 main {
   padding: 16px;
 }
-footer {
-  position: static;
-  bottom: 0;
-  background-color: #2EFFA8;
-  color: #262626;
-  padding: 8px 16px;
+a.hyperlink {
+  color: var(--color-pink-500);
+}
+a.hyperlink:hover {
+  color: var(--color-pink-600);
 }
